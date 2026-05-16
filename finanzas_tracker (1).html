@@ -850,16 +850,6 @@ function fromInputDate(str) {
   return `${d}/${m}/${y}`;
 }
 
-// ---- ENVIAR A SHEETS ----
-async function enviarTodo() {
-  if (!parsedData.length) return;
-
-  const btn = document.getElementById('btnEnviar');
-  btn.disabled = true;
-  btn.textContent = '⏳ Enviando...';
-
-// enviarTodo defined below
-
 // ---- APPS SCRIPT URL ----
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYG985nR_jkrY9EieLbRGpQo1cW6gB6NDb6zR7cth_5BlzEvDw_U1lUewytADLbeaqdg/exec';
 
